@@ -1,0 +1,14 @@
+name = "qqmusic-sign"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+# Upstream is a public static JSONP file, so no bindings are required.
+# Optional: uncomment to persist the parsed catalog in KV instead of the
+# per-isolate Cache API.
+# [[kv_namespaces]]
+# binding = "CATALOG"
+# id = "<kv-namespace-id>"
+
+[observability]
+enabled = true

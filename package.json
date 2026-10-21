@@ -1,0 +1,13 @@
+{
+  "name": "qqmusic-sign-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HTTP API / Cloudflare Worker that looks up official QQ Music download-link signs from y.qq.com/download/download.js",
+  "scripts": {
+    "dev": "bunx wrangler dev",
+    "deploy": "bunx wrangler deploy",
+    "test": "bun test test/worker.test.ts",
+    "test:live": "bun test test/live.test.ts"
+  }
+}
